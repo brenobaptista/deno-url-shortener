@@ -1,0 +1,8 @@
+{
+  "tasks": {
+    "start": "deno run --allow-net=:8080 --allow-read=./database.json --allow-write=./database.json --watch app.ts",
+    "test": "deno test --allow-net --allow-read=./database.json --allow-write=./database.json",
+    "coverage": "deno task test --coverage=cov_profile && deno coverage cov_profile"
+  },
+  "importMap": "./import_map.json"
+}

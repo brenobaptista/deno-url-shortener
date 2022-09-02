@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "oak": "https://deno.land/x/oak@v10.6.0/mod.ts",
+    "superoak": "https://deno.land/x/superoak@4.7.0/mod.ts",
+    "crypto": "https://deno.land/x/crypto_random_string@1.1.0/mod.ts"
+  }
+}
