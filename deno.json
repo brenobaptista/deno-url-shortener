@@ -1,8 +1,6 @@
 {
   "tasks": {
-    "start": "deno run --allow-env --allow-net --allow-read --watch app.ts",
-    "test": "deno test --allow-env --allow-net --allow-read",
-    "coverage": "deno task test --coverage=cov_profile && deno coverage cov_profile"
+    "start": "deno run --allow-env --allow-net --allow-read --watch app.ts"
   },
   "importMap": "./import_map.json"
 }

@@ -5,14 +5,13 @@
 ## Getting Started
 
 ```
-Serve at localhost:3000:
+1. Generate the .env file
+$ cp .env.example .env
+
+2. Populate the .env file
+
+3. Start the API
 $ deno task start
-
-Run tests:
-$ deno task test
-
-Run tests and check code coverage:
-$ deno task coverage
 ```
 
 ## Author
