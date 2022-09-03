@@ -1,10 +1,10 @@
-import { readDatabase } from "../models/database.ts";
+import { findOriginalUrlByHash } from "../models/hash.ts";
 
 export const getOriginalUrl = async (hash: string) => {
   try {
-    const database = await readDatabase();
+    const originalUrl = await findOriginalUrlByHash(hash);
 
-    return database[hash]?.original_url;
+    return originalUrl;
   } catch (error) {
     throw error;
   }
