@@ -1,6 +1,6 @@
 # Deno URL Shortener
 
-> URL shortener made using Deno
+> URL shortener service made using Deno
 
 ## Getting Started
 
@@ -17,15 +17,17 @@ $ cp .env.example .env
 $ docker compose up --build -d
 
 3. Create a new short URL
-$ curl -X POST -H "Content-Type: application/json" -d '{"original_url": "https://github.com/brenobaptista"}' http://localhost:8080/urls
+$ curl -X POST -H "Content-Type: application/json" \
+    -d '{"original_url": "https://github.com/brenobaptista"}' \
+    http://localhost:8080/urls
 
 4. Get the original URL back
 $ curl http://localhost:8080/{hash}
 
-5.1. Stop containers and remove containers and networks created by `docker compose up` (keep volumes and images).
+5.1. Stop and remove containers and networks created by "up" (keep volumes and images).
 $ docker compose down
 
-5.2. Stop containers and remove containers, networks, images and volumes created by `docker compose up`.
+5.2. Stop and remove containers, networks, images and volumes created by "up".
 $ docker compose down --rmi all -v
 ```
 
@@ -46,7 +48,9 @@ $ cp .env.example .env
 $ deno task start
 
 4. Create a new short URL
-$ curl -X POST -H "Content-Type: application/json" -d '{"original_url": "https://github.com/brenobaptista"}' http://localhost:8080/urls
+$ curl -X POST -H "Content-Type: application/json" \
+    -d '{"original_url": "https://github.com/brenobaptista"}' \
+    http://localhost:8080/urls
 
 5. Get the original URL back
 $ curl http://localhost:8080/{hash}
