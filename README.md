@@ -14,7 +14,7 @@ Make sure you have both installed and running.
 $ cp .env.example .env
 
 2. Run the service with Compose
-$ docker compose up --build -d
+$ docker compose up -d
 
 3. Create a new short URL
 $ curl -X POST -H "Content-Type: application/json" \
